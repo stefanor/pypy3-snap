@@ -14,6 +14,10 @@ apps:
   pypy3:
     command: bin/pypy3
 
+base: core
+architectures:
+  - build-on: amd64
+
 parts:
   pypy3:
     plugin: dump
