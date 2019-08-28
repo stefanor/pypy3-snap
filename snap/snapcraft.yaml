@@ -21,4 +21,4 @@ architectures:
 parts:
   pypy3:
     plugin: dump
-    source: https://bitbucket.org/pypy/pypy/downloads/pypy3-v$SNAPCRAFT_PROJECT_VERSION-linux64.tar.bz2
+    source: https://bitbucket.org/pypy/pypy/downloads/pypy3.6-v$SNAPCRAFT_PROJECT_VERSION-linux64.tar.bz2
