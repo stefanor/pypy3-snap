@@ -1,5 +1,5 @@
 name: pypy3
-version: '7.3.3'
+version: '7.3.4rc1'
 summary: PyPy is a fast, compliant alternative implementation of the Python language
 description: |
   PyPy is a replacement for CPython. It is built using the RPython language
@@ -25,10 +25,10 @@ parts:
   pypy3:
     plugin: dump
     source:
-      - on amd64: https://downloads.python.org/pypy/pypy3.6-v$SNAPCRAFT_PROJECT_VERSION-linux64.tar.bz2
-      - on arm64: https://downloads.python.org/pypy/pypy3.6-v$SNAPCRAFT_PROJECT_VERSION-aarch64.tar.bz2
-      - on ppc64el: https://downloads.python.org/pypy/pypy3.6-v$SNAPCRAFT_PROJECT_VERSION-ppc64le.tar.bz2
-      - on s390x: https://downloads.python.org/pypy/pypy3.6-v$SNAPCRAFT_PROJECT_VERSION-s390x.tar.bz2
+      - on amd64: https://downloads.python.org/pypy/pypy3.7-v$SNAPCRAFT_PROJECT_VERSION-linux64.tar.bz2
+      - on arm64: https://downloads.python.org/pypy/pypy3.7-v$SNAPCRAFT_PROJECT_VERSION-aarch64.tar.bz2
+      - on ppc64el: https://downloads.python.org/pypy/pypy3.7-v$SNAPCRAFT_PROJECT_VERSION-ppc64le.tar.bz2
+      - on s390x: https://downloads.python.org/pypy/pypy3.7-v$SNAPCRAFT_PROJECT_VERSION-s390x.tar.bz2
     override-build: |
       bin/pypy3 -m compileall -qx '/tests?[_/]' .
       snapcraftctl build
