@@ -24,9 +24,9 @@ parts:
   pypy3:
     plugin: dump
     source:
-      - on amd64: https://downloads.python.org/pypy/pypy3.10-v$SNAPCRAFT_PROJECT_VERSION-linux64.tar.bz2
-      - on arm64: https://downloads.python.org/pypy/pypy3.10-v$SNAPCRAFT_PROJECT_VERSION-aarch64.tar.bz2
-      - on s390x: https://downloads.python.org/pypy/pypy3.10-v$SNAPCRAFT_PROJECT_VERSION-s390x.tar.bz2
+      - on amd64: https://downloads.python.org/pypy/pypy3.11-v$SNAPCRAFT_PROJECT_VERSION-linux64.tar.bz2
+      - on arm64: https://downloads.python.org/pypy/pypy3.11-v$SNAPCRAFT_PROJECT_VERSION-aarch64.tar.bz2
+      - on s390x: https://downloads.python.org/pypy/pypy3.11-v$SNAPCRAFT_PROJECT_VERSION-s390x.tar.bz2
     override-build: |
       bin/pypy3 -m compileall -qx '/tests?[_/]' .
       snapcraftctl build
